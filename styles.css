@@ -62,19 +62,22 @@ body {
 .adopt-preview {
     margin-top: 30px;
     max-height: 800px;
-    flex: 1 1 auto;
     display: flex;
     justify-content: center;
-    gap: 110px;
+    align-items: flex-start;
+    gap:70px;
 }
 
 .preview-container {
+    flex: 0 1 auto;
     display: flex;
-   flex-direction: column;
+    flex-flow: column nowrap;
+    gap: 20px;
+
 }
 
 .preview-header {
-    inline-size: 350px;
+    inline-size: 400px;
     font-size: 40px;
     font-weight: 800;
     text-align: center;
@@ -91,16 +94,16 @@ body {
     transition: 0.7s;
 }
 
- .adopt-button {
+ #adopt-button {
     box-shadow: 3px 7px 15px rgb(223, 208, 223);
     padding:  7px 15px;
     border-radius: 20px;
-    margin-top: 14px;
     font-size: 20px;
     font-family: "BaksoSapi";
     border-style: dotted;
     border-color: whitesmoke;
     background-color: #9cc8e0;
+    margin: 0;
 }
 
 
@@ -158,7 +161,7 @@ body {
 .testimonial, .testimonial-name {
     display: flex;
     font-size: 36px;
-    width: 700px;
+    max-width: 700px;
 }
 
 .testimonial {
@@ -174,7 +177,7 @@ body {
 
 .action-page {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -208,7 +211,7 @@ body {
     border-radius: 12px;
     background-color: #c4a5ce;
     max-height: 150px;
-    width: 1000px;
+    min-width: 1000px;
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
